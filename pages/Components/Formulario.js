@@ -40,9 +40,15 @@ const [campos, setCampos] = useState({
 
   function handleFormSubmit(event){ 
     event.preventDefault(); 
-    console.log(campos); 
-    send(campos);
-    setObrigado(true);
+
+
+    if(!campos.email||!campos.indicado||!campos.anexo){
+      alert('Favor preencher todos os campos obrigatórios')
+      
+    }else{
+      send(campos);
+      setObrigado(true);
+    }
   
     
     
