@@ -36,6 +36,8 @@ nextApp.prepare().then(() => {
             pass: process.env['password']
         }
     })
+
+  
     
     const mail = {
         from: 'Pessoas',
