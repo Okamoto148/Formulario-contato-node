@@ -7,7 +7,6 @@ const cors = require('cors');
 const path = require('path');
 
 app.use(cors());
-app.use(require("cors")());
 app.use(bodyParser.json());
 
 
@@ -69,9 +68,7 @@ nextApp.prepare().then(() => {
 }) 
 
   // Message Sending
-  app.get("/custom-route", (req, res) => {
-    res.send("Custom Route!!")
-  })
+
 
   app.get("*", nextHandler);
   app.post('*', nextHandler);
