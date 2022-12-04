@@ -67,7 +67,6 @@ nextApp.prepare().then(() => {
         
 }) 
 
-  // Message Sending
 
 
   app.get("*", nextHandler);
