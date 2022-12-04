@@ -32,8 +32,8 @@ nextApp.prepare().then(() => {
         port: 2525,
         secure: false, //SSL/TLS
         auth: {
-            user: process.env['userName'],
-            pass: process.env['password']
+            user: "974fa162d843a6",
+            pass: "6cb1abf13ced8a"
         }
     })
 
