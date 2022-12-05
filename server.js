@@ -20,9 +20,6 @@ const mailer = require("nodemailer");
 
 nextApp.prepare().then(() => {
 
-  app.get("*", nextHandler);
-  app.post('*', nextHandler);
-
   app.post('/sendmail', upload.single('anexo'), (req, res) => { 
     const nome = req.body.nome;
     const email = req.body.email;
@@ -72,7 +69,8 @@ nextApp.prepare().then(() => {
 
 
 
-  
+  app.get("*", nextHandler);
+  app.post('*', nextHandler);
 
 
 
