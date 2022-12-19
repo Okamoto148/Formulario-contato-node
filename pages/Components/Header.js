@@ -1,9 +1,7 @@
-import Image from 'next/image';
-
 export default function Header(){
   return(
-    <>
-      <img src='../img/logo.svg' />
-    </>
+    <div>
+      <img src='../img/logo.png' height='70' />
+    </div>
   )
 }
